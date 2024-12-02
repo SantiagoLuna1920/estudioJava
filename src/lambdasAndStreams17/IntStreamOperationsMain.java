@@ -64,6 +64,6 @@ public class IntStreamOperationsMain {
 
         //imprimiendo los valores del array values para ver si se mutaron
      IntStream.of(values).forEach( (int value) -> System.out.printf("%d ", value) );
-
+//xd
     }
 }
