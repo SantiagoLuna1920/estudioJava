@@ -65,5 +65,26 @@ public class IntStreamOperationsMain {
         //imprimiendo los valores del array values para ver si se mutaron
      IntStream.of(values).forEach( (int value) -> System.out.printf("%d ", value) );
 //xd
+     System.out.println();
+
+     //de esta forma puedo guardar los valores de un lambda, con el objeto tipo IntStream
+     //y luego para mostrar o acceder a esos valores los imprimimos con un forEach
+
+     //para redordar, usamos la variable tipo IntStream cuando se trabaja con un array, por ejemplo,
+     //la variable valores guarda un array
+     IntStream valores = IntStream.of(values)
+             .filter((int value) -> value%2!=0)
+             .sorted()
+             .map((int value) -> value*10);
+
+     System.out.printf("%nValores de la variable valores impresas con forEach: ");
+     valores.forEach((int value) -> System.out.printf("%d ",value));
+
+     System.out.println();
+     System.out.print("Valor de reduce guardado en variable IntStream: ");
+
+     //aqui usamos un tipo int ua que este nos devolverá solo un producto y no un objeto
+     int reduceProduct = IntStream.of(values).reduce(1,(int x, int y) -> x*y);
+     System.out.printf("%d", reduceProduct);
     }
 }
