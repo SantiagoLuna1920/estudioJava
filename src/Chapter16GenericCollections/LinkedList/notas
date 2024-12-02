@@ -1,0 +1,12 @@
+ Method              Description
+ sort                Sorts the elements of a List.
+ binarySearch        Locates an object in a List, using the high-performance binary search   algorithm which we introduced in Section 7.15 and discuss in detail in Section 19.4.
+ reverse             Reverses the elements of a List.
+ shuffle             Randomly orders a List’s elements.
+ fill                Sets every List element to refer to a specified object.
+ copy                Copies references from one List into another.
+ min                 Returns the smallest element in a Collection.
+max                  Returns the largest element in a Collection.
+ addAll              Appends all elements in an array to a Collection.
+ frequency           Calculates how many collection elements are equal to the specified element.
+ disjoint            Determines whether two collections have no elements in common.
