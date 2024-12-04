@@ -11,7 +11,7 @@ public class IntStreamOperationsMain {
        //Display original Values
         System.out.print("Original values: ");
         IntStream.of(values)
-                .forEach(value -> System.out.printf("%d ",value));
+                .forEach((int value) -> System.out.printf("%d ",value));
         System.out.println();
 
         //count, min, max, sum and average of the values
